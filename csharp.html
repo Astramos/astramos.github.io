@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Nauka programowania</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 20%;
+  right: 10%
+  width: 80%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 35px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+</style>
+</head>
+<body background="images/background.jpg" text="yellow" link="red" vlink="red" alink="red">
+
+<table style="margin-left: 20%; margin-right: 20%;">
+<tbody>
+<tr bgcolor="#333">
+<td>
+
+<h1 style="text-align: center; padding-top:100px;">Csharp</h1>
+<p>&nbsp;</p>
+<p style="padding-left: 15%; padding-right: 15%;"><strong>C#</strong>&ndash;&nbsp;obiektowy&nbsp;język programowania&nbsp;zaprojektowany w latach 1998-2001 przez zesp&oacute;ł pod kierunkiem&nbsp;Andersa Hejlsberga&nbsp;dla firmy&nbsp;Microsoft.</p>
+<p style="padding-left: 15%; padding-right: 15%;">Program&nbsp;napisany w&nbsp;tym języku&nbsp;kompilowany&nbsp;jest do języka&nbsp;Common Intermediate Language&nbsp;(CIL), specjalnego&nbsp;kodu pośredniego&nbsp;wykonywanego w&nbsp;środowisku uruchomieniowym&nbsp;takim jak&nbsp;.NET Framework,&nbsp;.NET Core,&nbsp;Mono lub&nbsp;DotGNU. Wykonanie skompilowanego programu przez&nbsp;system operacyjny&nbsp;bez takiego środowiska nie jest możliwe.</p>
+<h1 style="padding-left: 15%; padding-right: 15%;"><span id="Nazwa" class="mw-headline">Nazwa</span></h1>
+<p style="padding-left: 15%; padding-right: 15%;">Nazwa języka powstała analogicznie jak nazwa C++. Operator ++ w C (w C++ też) oznacza zwiększenie o jeden, więc C++ to więcej niż C. Autorzy C# wykorzystali podobny pomysł, gdzie symbol krzyżyka/kratki przypomina dwa połączone ze sobą operatory ++. W muzyce dźwięk C♯ jest wyższy niż dźwięk C, może to sugerować, że język jest rozwinięciem C/C++<sup id="cite_ref-3" class="reference"></sup>.</p>
+<p style="padding-left: 15%; padding-right: 15%;">Symbol&nbsp;♯ (krzyżyk)&nbsp;jest niedostępny na większości klawiatur, niekt&oacute;rych czcionkach i przeglądarkach internetowych, dlatego zalecane jest używanie&nbsp;symbolu kratki (#), kt&oacute;ry bardzo przypomina symbol muzyczny. Czasami tam gdzie ma to uzasadnienie np. w materiałach promocyjnych, Microsoft używa nazwy C♯ zamiast C#<sup id="cite_ref-4" class="reference"></sup>.</p>
+<h2 style="padding-left: 15%; padding-right: 15%;"><span id="Cechy_języka" class="mw-headline">Cechy języka</span></h2>
+<p style="padding-left: 15%; padding-right: 15%;">Język C# ma wiele cech wsp&oacute;lnych z językami programowania&nbsp;Object Pascal,&nbsp;Delphi,&nbsp;C++&nbsp;i&nbsp;Java.</p>
+<ul style="padding-left: 15%; padding-right: 15%;">
+<li>obiektowość z hierarchią o jednym elemencie nadrzędnym: podobnie jak w Javie, kod programu jest zbiorem klas. W C# podobnie tak jak w Javie/Object Pascalu hierarchia dziedziczenia opiera się na istnieniu jednej klasy&nbsp;<code class="mw-highlight" dir="ltr"><span class="kt">object</span></code>&nbsp;(<code class="mw-highlight" dir="ltr"><span class="n">System</span><span class="p">.</span><span class="n">Object</span></code>), kt&oacute;ra stanowi element nadrzędny tej hierarchii. W szczeg&oacute;lności oznacza to, że r&oacute;wnież typy proste (<code class="mw-highlight" dir="ltr"><span class="kt">int</span></code>,&nbsp;<code class="mw-highlight" dir="ltr"><span class="kt">double</span></code>, itd.) są strukturami z właściwymi sobie metodami, np.&nbsp;<code class="mw-highlight" dir="ltr"><span class="kt">int</span>&nbsp;<span class="n">i</span><span class="p">=</span><span class="m">1</span><span class="p">;</span>&nbsp;<span class="kt">string</span>&nbsp;<span class="n">s</span>&nbsp;<span class="p">=</span>&nbsp;<span class="n">i</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span></code></li>
+<li>odśmiecanie pamięci: zarządzaniem pamięcią zajmuje się środowisko uruchomieniowe. Oznacza to, że nie ma potrzeby samodzielnego zajmowania się zwalnianiem pamięci po obiektach, kt&oacute;re przestają być używane</li>
+<li>właściwości,&nbsp;indeksery: dodatkowe elementy składowe&nbsp;klas</li>
+<li>delegaty,&nbsp;zdarzenia: odpowiedniki i rozwinięcie&nbsp;wskaźnik&oacute;w&nbsp;na funkcje z&nbsp;C++</li>
+<li>refleksje i atrybuty klas: w czasie pracy programu istnieje możliwość analizy struktury kodu z poziomu tego kodu. Umożliwia to tworzenie wysoce uniwersalnych mechanizm&oacute;w operujących na strukturze kodu nieznanej w czasie kompilacji. Mechanizm ten wykorzystywany jest m.in. w bibliotekach&nbsp;ORM, narzędziach do analizy i weryfikacji kodu czy rozszerzeniach&nbsp;AOP. Mechanizm atrybut&oacute;w został z C# zapożyczony do języka&nbsp;Java&nbsp;w wersji 1.5 (adnotacje), jakkolwiek samo Reflection API istniejące od pierwszego wydania języka stanowiło inspirację dla tw&oacute;rc&oacute;w C#</li>
+<li>typy og&oacute;lne&nbsp;(<em>generics</em>&nbsp;&ndash; dostępne od wersji&nbsp;.NET&nbsp;2.0): mechanizm zbliżony swoją og&oacute;lnością do&nbsp;szablon&oacute;w&nbsp;w C++, jednak tu typ og&oacute;lny jest przenoszony do&nbsp;modułu&nbsp;binarnego i możliwy jest do wykorzystania bez konieczności posiadania&nbsp;kodu źr&oacute;dłowego</li>
+<li>dynamiczne tworzenie kodu: biblioteki&nbsp;.NET&nbsp;umożliwiają dynamiczne tworzenie kodu w czasie działania programu i włączanie go do kodu aktualnie wykonywanego. Możliwe jest zar&oacute;wno dynamiczne tworzenie kodu wykonywalnego ze źr&oacute;deł C# jak i tworzenie dynamicznych moduł&oacute;w w języku pośrednim (CIL).</li>
+<li>bogata biblioteka klas&nbsp;BCL, umożliwiająca rozwijanie aplikacji konsolowych, okienkowych (System.Windows.Forms oraz WPF od .NET Framework 3.0), bazodanowych (ADO.NET), sieciowych (System.Net), w architekturze rozproszonej (WebServices) czy dynamicznych aplikacji internetowych (ASP.NET) oraz dynamiczne treści multimedialne (Silverlight).</li>
+<li>W C#, podobnie jak w C stosuje się dwa rodzaje&nbsp;komentarzy:
+<ol>
+<li><tt>//</tt>&nbsp;to komentarz jednoliniowy, czyli wszystkiego, co znajduje się za nim, kompilator nie bierze pod uwagę.</li>
+<li>Komentarz wielowierszowy zaczyna się od&nbsp;<tt>/*</tt>&nbsp;a kończy&nbsp;<tt>*/</tt>. Kompilator nie bierze pod uwagę tego, co znajduje się pomiędzy.</li>
+</ol>
+</li>
+</ul>
+<p style="padding-left: 15%; padding-right: 15%;">Jeśli komentarz zaczyna się od&nbsp;<tt>///</tt>&nbsp;lub&nbsp;<tt>/**</tt>, to jest to komentarz, w kt&oacute;rym umieszcza się dokumentację do kodu.</p>
+<h3 style="padding-left: 25%;"><span style="color: #339966;">Pliki .pdf:</span></h3>
+<p style="padding-left: 30%;"><a href="https://drive.google.com/open?id=1750dHeUKkWtL9JZsjMcNHlOjT1esfOGk">Link na GDrive</a></p>
+<p style="padding-left: 30%;">&nbsp;</p>
+<h3 style="padding-left: 25%;"><span style="color: #339966;">Przydatne linki:</span></h3>
+<p style="padding-left: 30%;"><a href="https://4programmers.net">4programmers.net</a></p>
+<p style="padding-left: 30%;"><a href="https://forum.pasja-informatyki.pl/questions/programowanie/c-sharp-dot-net">forum.pasja-informatyki.pl</a></p>
+<p style="padding-left: 30%;"><a href="http://www.csharp.pl">csharp.pl</a></p>
+<p style="padding-left: 30%;">&nbsp;</p>
+<h3 style="padding-left: 25%;"><span style="color: #339966;">Materiały wideo:</span></h3>
+<p>&nbsp;</p>
+<table style="height: 39px; width: 1146px;">
+<tbody style="text-align: center;">
+<tr style="height: 365px;">
+<td style="width: 138px; height: 365px;">
+<p style="text-align: left; padding-left: 20%; padding-right: 20%;"><span style="text-decoration: underline;">Tworzenie wykresu w C#:</span></p>
+<iframe src="https://www.youtube.com/embed/hhr2mi-TBLY" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
+<td style="width: 312px; height: 365px;">
+<p style="text-align: left; padding-left: 20%; padding-right: 20%;"><span style="text-decoration: underline;">Tworzenie suwaka (ScrollBar) w C#:</span></p>
+<iframe src="https://www.youtube.com/embed/qdj9CG0ZE00" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
+</tr>
+<tr style="height: 62.875px;">
+<td style="width: 138px; height: 62.875px;">
+<p style="text-align: left; padding-left: 20%; padding-right: 20%;"><span style="text-decoration: underline;">Wczytywanie pliku excel do tabelki (DataGridView) w C#:</span></p>
+<iframe src="https://www.youtube.com/embed/JlzzdB3K-1M" width="560" height="314" allowfullscreen="allowfullscreen"></iframe>&nbsp;</td>
+<td style="width: 312px; height: 62.875px;">
+<p style="text-align: left; padding-left: 20%; padding-right: 20%;"><span style="text-decoration: underline;">Integracja bazy danych z tabelką w C#:</span></p>
+<iframe src="https://www.youtube.com/embed/_sB0A6FIhUM" width="560" height="314" allowfullscreen="allowfullscreen"></iframe>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="color: #ff0000;">Autor strony: Patryk Wielog&oacute;rski, index: 49141</span></p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<div class="navbar">
+  <a href="index.html" class="active">Strona startowa</a>
+  <a href="csharp.html">Csharp</a>
+  <a href="techniki_internetowe.html">Techniki internetowe</a>
+  <a href="python.html">Python</a>
+  <a href="bazy_danych.html">Bazy Danych</a>
+  <a href="https://web.telegram.org/#/login"><img src="images/telegram.png" width="20px" height="10%" /> Telegram</a>
+  <a href="kontakt.html">Kontakt</a>
+</div>
+
+</body>
+</html>
