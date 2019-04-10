@@ -38,4 +38,14 @@ body {
   padding: 16px;
   margin-bottom: 30px;
 }
+img{
+height: auto;
+max-width: 100%;
+width: auto;
+}
+video{
+height: auto;
+max-width: 100%;
+width: auto;
+}
 </style>
